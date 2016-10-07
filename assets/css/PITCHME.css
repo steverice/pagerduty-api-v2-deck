@@ -46,6 +46,69 @@
   font-style: italic;
 }
 
-.reveal {
+.reveal,
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
   font-family: 'Colfax', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.reveal a {
+  color: #47BA04;
+}
+
+::selection {
+  background: #47BA04;
+}
+
+::-moz-selection {
+  background: #47BA04;
+}
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+.reveal a:hover img {
+  border-color: #47BA04;
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+  border-right-color: #47BA04; }
+
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+  border-left-color: #47BA04; }
+
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+  border-bottom-color: #47BA04; }
+
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+  border-top-color: #47BA04; }
+
+.reveal .controls .navigate-left.enabled:hover {
+  border-right-color: #3C0; }
+
+.reveal .controls .navigate-right.enabled:hover {
+  border-left-color: #3C0; }
+
+.reveal .controls .navigate-up.enabled:hover {
+  border-bottom-color: #3C0; }
+
+.reveal .controls .navigate-down.enabled:hover {
+  border-top-color: #3C0; }
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+.reveal .progress span {
+  background: #47BA04;
 }
