@@ -17,7 +17,45 @@
 
 #HSLIDE
 
-## Step 1: Have a Plan
+## Have a Plan
 
 #VSLIDE?gist=e33e5d401e5f8fa9e260ba1b7a20bdd2
 
+#HSLIDE
+
+## Break the Plan Down
+
+#VSLIDE
+
+## Pick your Battles
+
+- Don't change what works <!-- .element: class="fragment" -->
+- What value does this change bring? <!-- .element: class="fragment" -->
+- How will clients consume it? <!-- .element: class="fragment" -->
+- Documentation *is* the developer experience <!-- .element: class="fragment" -->
+
+#HSLIDE
+
+## Testing
+
+#VSLIDE?image=assets/images/dogfood.jpg
+
+# Dogfood. Everything.
+
+#HSLIDE
+
+## Document
+
+#HSLIDE
+
+## Analyze
+
+#VSLIDE
+
+# Gather usage data
+
+- which endpoints aren't being used?
+- which endpoints are being used in ways they shouldn't?
+- which customers are using the APIs?
+
+# VSLIDE
