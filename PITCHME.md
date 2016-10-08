@@ -52,10 +52,12 @@
 
 #VSLIDE
 
-# Gather usage data
+## Gather usage data
 
 - which endpoints aren't being used?
 - which endpoints are being used in ways they shouldn't?
 - which customers are using the APIs?
 
-# VSLIDE
+#VSLIDE?image=assets/images/pour-over.jpg
+
+## Pour over logs
