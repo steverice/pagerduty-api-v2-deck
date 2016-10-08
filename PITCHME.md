@@ -1,7 +1,7 @@
 #HSLIDE
 
 ## The Kitchen Sink
-##### <span style="font-family:Helvetica Neue; font-weight:bold">A <span style="color:#e49436">Git</span>Pitch Feature Tour</span>
+##### A <span style="color:#47BA04">Git</span>Pitch Feature Tour
 
 #HSLIDE
 ## Slideshow Theme Switcher
@@ -374,4 +374,4 @@ Enable auto-slide with custom slide intervals, presentation looping, and RTL flo
 #HSLIDE
 
 ## GO FOR IT.
-## JUST ADD <span style="color:#e49436; text-transform: none">PITCHME.md</span> ;)
+## JUST ADD <span style="color:#47BA04; text-transform: none">PITCHME.md</span> ;)
