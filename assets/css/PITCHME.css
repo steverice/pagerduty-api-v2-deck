@@ -56,6 +56,15 @@
   font-family: 'Colfax', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-weight: bold;
+}
+
 .reveal a {
   color: #47BA04;
 }
