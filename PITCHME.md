@@ -19,5 +19,5 @@
 
 ## Step 1: Have a Plan
 
-#VSLIDE?gist=510e2f1da146f1aa237e12ce3aaa73dc
+#VSLIDE?gist=e33e5d401e5f8fa9e260ba1b7a20bdd2
 
