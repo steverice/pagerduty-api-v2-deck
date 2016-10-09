@@ -21,10 +21,6 @@
 
 #VSLIDE?gist=e33e5d401e5f8fa9e260ba1b7a20bdd2
 
-#HSLIDE
-
-## Break the Plan Down
-
 #VSLIDE
 
 ## Pick your Battles
@@ -33,6 +29,13 @@
 - What value does this change bring? <!-- .element: class="fragment" -->
 - How will clients consume it? <!-- .element: class="fragment" -->
 - Documentation *is* the developer experience <!-- .element: class="fragment" -->
+
+#VSLIDE
+
+## Change the Plan
+
+![Image-Absolute](https://d1z75bzl1vljy2.cloudfront.net/kitchen-sink/octocat-privateinvestocat.jpg)
+
 
 #HSLIDE
 
@@ -61,3 +64,9 @@
 #VSLIDE?image=assets/images/pour-over.jpg
 
 ## Pour over logs
+
+#HSLIDE
+
+# Get the Word Out
+
+#VSLIDE?image=assets/images/v1-docs-banner.png
