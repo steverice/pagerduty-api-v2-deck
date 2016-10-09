@@ -84,6 +84,12 @@
   border-color: #47BA04;
 }
 
+.reveal section img {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
