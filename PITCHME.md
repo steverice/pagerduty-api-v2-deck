@@ -69,4 +69,6 @@
 
 # Get the Word Out
 
-#VSLIDE?image=assets/images/v1-docs-banner.png
+#VSLIDE
+
+![v1 docs banner](assets/images/v1-docs-banner.png)
