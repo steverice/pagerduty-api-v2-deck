@@ -17,6 +17,18 @@
 
 #HSLIDE
 
+# Research
+
+#VSLIDE?image=assets/images/turtles.jpg
+
+## Stand on the Shoulders of Giants
+
+#VSLIDE?video=assets/videos/amber-feng.mp4
+
+## Conferences and Talks
+
+#HSLIDE
+
 # Plan
 
 #VSLIDE?gist=e33e5d401e5f8fa9e260ba1b7a20bdd2
@@ -131,6 +143,7 @@
 
 ## Image Credits
 
+- "Stand on the Shoulders of Giants" By Samir Eberlin [CC0], via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Turtles.on.a.stone.in.brazil.jpg
 - "Dogfood. Everything." Original source not found. Used without permission.
-- "Keep it maintainable" By David Jones from Isle of Wight, United Kingdom [[CC BY 2.0](http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Mike_O%27Callaghan-Pat_Tillman_Bridge_construction.jpg 🔗 <!-- .element: class="attribution" -->
-- "Pour over logs" by Timothy Marsee [[CC BY 2.0](http://creativecommons.org/licenses/by/2.0)], via Flickr — https://www.flickr.com/photos/tmarsee530/9899684046 🔗 <!-- .element: class="attribution" -->
+- "Keep it maintainable" By David Jones from Isle of Wight, United Kingdom [[CC BY 2.0](http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Mike_O%27Callaghan-Pat_Tillman_Bridge_construction.jpg
+- "Pour over logs" by Timothy Marsee [[CC BY 2.0](http://creativecommons.org/licenses/by/2.0)], via Flickr — https://www.flickr.com/photos/tmarsee530/9899684046
