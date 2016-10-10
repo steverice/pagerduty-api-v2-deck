@@ -52,21 +52,6 @@
 
 ![Changed Includes](assets/images/change-proposal.png)
 
-
-#HSLIDE
-
-# Test
-
-#VSLIDE?image=assets/images/dogfood.jpg
-
-# Dogfood. Everything.
-
-#VSLIDE
-
-## Automate
-
-![Automated API Testing](assets/images/automated-api-testing.png)
-
 #HSLIDE
 
 # Document
@@ -100,6 +85,50 @@
 #VSLIDE?image=assets/images/v2-migration-guide.png
 
 ## Remember your audience
+
+#HSLIDE
+
+# Develop
+
+#VSLIDE
+
+## Keep it Simple
+
+```ruby
+module Api
+  module V2
+    module EscalationPolicyAdapter
+      class Base < ApiDuty::Adapter
+        validate :name, validator: :is_string, if: :condition_exists
+        validate :escalation_rules, validator: :is_array, if: :condition_exists
+        validate :description, validator: :is_string, if: :condition_exists
+        validate :num_loops, validator: :is_integer, if: :condition_exists
+        validate :teams, validator: :is_array, if: :condition_exists
+        validate :teams, validator: make_validator_each(make_validator_object_resource(%w(team).freeze)), if: :condition_present
+
+        passthrough :name, :description
+        generate(:num_repeats, from: :num_loops, if: :condition_exists) { |num| num.to_i + 1 }
+        generate :escalation_policies_teams_attributes, from: :teams, generator: :teams_join_params, if: :condition_present
+        generate :escalation_policies_teams_attributes, from: :teams, generator: make_generator_default([]), unless: :condition_present
+      end
+    end
+  end
+end
+```
+
+#HSLIDE
+
+# Test
+
+#VSLIDE?image=assets/images/dogfood.jpg
+
+# Dogfood. Everything.
+
+#VSLIDE
+
+## Automate
+
+![Automated API Testing](assets/images/automated-api-testing.png)
 
 #HSLIDE
 
