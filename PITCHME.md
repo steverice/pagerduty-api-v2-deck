@@ -109,6 +109,14 @@
 
 #HSLIDE
 
+# Measure
+
+#VSLIDE
+
+![API v2 Use Metrics](assets/images/v2-use-metrics.png)
+
+#HSLIDE
+
 # Appendix
 
 #VSLIDE
