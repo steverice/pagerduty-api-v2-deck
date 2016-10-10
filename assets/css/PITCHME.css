@@ -142,3 +142,10 @@ div.slide-background.present[data-background-hash]:not([data-background-hash*="p
 body div:first-child img {
   width: 100%;
 }
+
+/*********************************************
+ * DECK-SPECIFIC
+ *********************************************/
+#image-credits + ul {
+  font-size: 0.5em;
+}
