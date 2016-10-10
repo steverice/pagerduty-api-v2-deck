@@ -67,7 +67,19 @@
 
 #HSLIDE
 
-# Get the Word Out
+## Evangelize
+
+#VSLIDE
+
+![PagerCon Talk: API 0 to 30](assets/images/pagercon-talk.jpg)
+
+#HSLIDE
+
+## Get the Word Out
+
+#VSLIDE
+
+![v1 docs banner](assets/images/v1-docs-bannerless.png)
 
 #VSLIDE
 
