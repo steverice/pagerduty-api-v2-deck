@@ -1,9 +1,9 @@
 #HSLIDE
 
 ## API Creation to Iteration
-#### Without the Frustration
+### Without the Frustration
 
-### Steve Rice, API Captain, <span class="pd-green">PagerDuty</span>
+## Steve Rice, API Captain, <span class="pd-green">PagerDuty</span>
 
 #VSLIDE
 
@@ -11,15 +11,18 @@
 
 ![Steve](assets/images/)
 
-- engineer at PagerDuty since 2013
+- software engineer at PagerDuty since 2013
 - Rails, Scala, Backbone, Ember.js
-
 
 #HSLIDE
 
 # Research
 
 #VSLIDE?image=assets/images/turtles.jpg
+
+<!--
+Here are some test notes
+-->
 
 ## Stand on the Shoulders of Giants
 
