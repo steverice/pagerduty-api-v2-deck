@@ -34,7 +34,7 @@
 
 ## Change the Plan
 
-![Image-Absolute](https://d1z75bzl1vljy2.cloudfront.net/kitchen-sink/octocat-privateinvestocat.jpg)
+![Changed Includes](assets/images/change-proposal.png)
 
 
 #HSLIDE
