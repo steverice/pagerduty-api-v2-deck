@@ -90,6 +90,10 @@
   box-shadow: none;
 }
 
+div.slide-background.present[data-background-hash]:not([data-background-hash*="pagerduty.github.io/gitpitch-deck"]) {
+  opacity: 0.45; /* dim custom background images */
+}
+
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
