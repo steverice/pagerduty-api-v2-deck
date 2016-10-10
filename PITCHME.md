@@ -65,6 +65,12 @@
 
 #VSLIDE?gist=956f25b0d2c3f064c278529fc475da18
 
+#VSLIDE
+
+## Choose domain-specific technologies
+
+![API Spec Formats](assets/images/api-specs.png)
+
 #HSLIDE
 
 # Analyze
