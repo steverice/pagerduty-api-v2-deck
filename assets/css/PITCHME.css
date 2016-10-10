@@ -69,6 +69,10 @@
   color: #47BA04;
 }
 
+.reveal a:hover {
+  color: #3C0;
+}
+
 ::selection {
   background: #47BA04;
 }
