@@ -28,7 +28,7 @@
 - Don't change what works <!-- .element: class="fragment" -->
 - What value does this change bring? <!-- .element: class="fragment" -->
 - How will clients consume it? <!-- .element: class="fragment" -->
-- Documentation *is* the developer experience <!-- .element: class="fragment" -->
+- Documentation is the developer experience <!-- .element: class="fragment" -->
 
 #VSLIDE
 
