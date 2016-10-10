@@ -55,6 +55,10 @@
 
 # Document
 
+#VSLIDE
+
+![Stripe API Documentation](assets/images/stripe-api-docs.png)
+
 #HSLIDE
 
 # Analyze
