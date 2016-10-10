@@ -49,8 +49,7 @@
 
 ## Automate
 
-![Runscope](assets/images/runscope.png)
-![API Fortress](assets/images/apifortress.png)
+![Automated API Testing](assets/images/automated-api-testing.png)
 
 #HSLIDE
 
