@@ -87,13 +87,15 @@
 
 ![API Spec Formats](assets/images/api-specs.png)
 
-#VSLIDE?image=assets/images/swagger-docs.png
-
-## Make it interactive
+#VSLIDE?gist=44dca2fec85c13810f1c102bacedfa1e
 
 #VSLIDE?image=assets/images/remember-the-humans.jpg
 
 ## Consider the Humans
+
+#VSLIDE?image=assets/images/swagger-docs.png
+
+## Make it interactive
 
 #VSLIDE?image=assets/images/v2-migration-guide.png
 
