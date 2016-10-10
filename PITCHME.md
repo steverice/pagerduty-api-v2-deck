@@ -27,6 +27,10 @@
 
 ## Conferences and Talks
 
+#VSLIDE?image=assets/images/dropbox-blog.png
+
+## Developer Blogs
+
 #HSLIDE
 
 # Plan
