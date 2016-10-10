@@ -59,6 +59,12 @@
 
 ![Stripe API Documentation](assets/images/stripe-api-docs.png)
 
+#VSLIDE?image=assets/images/maintainable.jpg
+
+## Keep it maintainable
+
+#VSLIDE?gist=956f25b0d2c3f064c278529fc475da18
+
 #HSLIDE
 
 # Analyze
@@ -94,3 +100,14 @@
 #VSLIDE
 
 ![v1 docs banner](assets/images/v1-docs-banner.png)
+
+#HSLIDE
+
+# Appendix
+
+#VSLIDE
+
+## Image Credits
+
+- "Keep it maintainable" By David Jones from Isle of Wight, United Kingdom [CC BY 2.0 (http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons
+  - https://commons.wikimedia.org/wiki/File:Mike_O%27Callaghan-Pat_Tillman_Bridge_construction.jpg 
