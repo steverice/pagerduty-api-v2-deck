@@ -17,7 +17,7 @@
 
 #HSLIDE
 
-## Have a Plan
+# Plan
 
 #VSLIDE?gist=e33e5d401e5f8fa9e260ba1b7a20bdd2
 
@@ -39,19 +39,25 @@
 
 #HSLIDE
 
-## Testing
+# Test
 
 #VSLIDE?image=assets/images/dogfood.jpg
 
 # Dogfood. Everything.
 
+#VSLIDE
+
+## Automate
+
+![Runscope]()
+
 #HSLIDE
 
-## Document
+# Document
 
 #HSLIDE
 
-## Analyze
+# Analyze
 
 #VSLIDE
 
@@ -67,7 +73,7 @@
 
 #HSLIDE
 
-## Evangelize
+# Evangelize
 
 #VSLIDE
 
@@ -75,7 +81,7 @@
 
 #HSLIDE
 
-## Get the Word Out
+# Market
 
 #VSLIDE
 
