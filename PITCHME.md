@@ -97,6 +97,14 @@
 
 #HSLIDE
 
+# Communicate
+
+#VSLIDE
+
+![Customer Support](assets/images/customer-support.png)
+
+#HSLIDE
+
 # Market
 
 #VSLIDE
