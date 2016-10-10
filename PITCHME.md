@@ -95,24 +95,26 @@
 ## Keep it Simple
 
 ```ruby
-module Api
-  module V2
-    module EscalationPolicyAdapter
-      class Base < ApiDuty::Adapter
-        validate :name, validator: :is_string, if: :condition_exists
-        validate :escalation_rules, validator: :is_array, if: :condition_exists
-        validate :description, validator: :is_string, if: :condition_exists
-        validate :num_loops, validator: :is_integer, if: :condition_exists
-        validate :teams, validator: :is_array, if: :condition_exists
-        validate :teams, validator: make_validator_each(make_validator_object_resource(%w(team).freeze)), if: :condition_present
+class Api::V2::EscalationPolicyAdapter::Base < ApiDuty::Adapter
+  root_attribute :escalation_policy
 
-        passthrough :name, :description
-        generate(:num_repeats, from: :num_loops, if: :condition_exists) { |num| num.to_i + 1 }
-        generate :escalation_policies_teams_attributes, from: :teams, generator: :teams_join_params, if: :condition_present
-        generate :escalation_policies_teams_attributes, from: :teams, generator: make_generator_default([]), unless: :condition_present
-      end
-    end
+  validate :name, validator: :is_string
+  validate :escalation_rules, validator: :is_array
+  validate :description, validator: :is_string
+  validate :num_loops, validator: :is_integer
+  validate :teams, validator: :is_array
+  validate :teams, validator: make_validator_each(
+      make_validator_object_resource(%w(team).freeze)
+    )
+
+  passthrough :name, :description
+  generate :num_repeats, from: :num_loops do |num|
+    num.to_i + 1
   end
+  generate :escalation_policies_teams_attributes,
+    from: :teams, generator: :teams_join_params
+  generate :escalation_policies_teams_attributes,
+    from: :teams, generator: make_generator_default([])
 end
 ```
 
