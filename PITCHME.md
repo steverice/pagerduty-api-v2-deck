@@ -158,7 +158,7 @@ end
 
 #HSLIDE
 
-# Communicate
+# Connect
 
 #VSLIDE
 
