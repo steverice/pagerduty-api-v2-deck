@@ -9,9 +9,10 @@
 
 ## Who am I?
 
-![Steve](assets/images/)
+![PagerDuty](assets/images/pagerduty_brand_stamp.png)
 
 - software engineer at PagerDuty since 2013
+- incident resolution platform: triage events, manage incident response
 - Rails, Scala, Backbone, Ember.js
 
 #HSLIDE
@@ -106,13 +107,29 @@ Don't ignore these inputs; adapt to them. Have a process that encourages change 
 
 ## Process is Paramount
 
+<!--
+The most difficult part of maintaining an API is adapting to change. We need to strike a balance between building new and shiny things and preventing thrash for our developers. As consistency is one of the main tenants of our API, a big challenge was, and remains, keeping new development in line with the API goals without standing in the way of progress.
+Originally, we had an email list that we'd use to discuss new API changes. It was common knowledge among the engineers that if you wanted to make an API change, it would need to be proposed to the email group where our API Czar sat. But this was slow, cumbersome, and difficult to make sure the right discussion happened and translated into the proper course of action.
+-->
+
 #VSLIDE?gist=2109c70ecff5b71d8bc0a072760b03fe
 
 ## Process is Paramount
 
 <!--
-The most difficult part of maintaining an API is adapting to change. We need to strike a balance between building new and shiny things and preventing thrash for our developers. As consistency is one of the main tenants of our API, a big challenge was, and remains, keeping new development in line with the API goals without standing in the way of progress.
+So we used a tool that our developers were already familiar with: GitHub. Contributors can now write in Markdown, comment on specific lines within the proposal, and have the back-and-forth type of review discussion that GitHub facilities. Familiar GitHub semantics like merging a pull request to indicate finality and version tracking to see how a proposal evolved gives much more context of the past and current state of a proposal. Plus, nice things like the abilitiy to link directly to something being discussed.
+-->
 
+#VSLIDE
+
+![Flagger in Action](assets/images/flagger.png)
+
+https://github.com/PagerDuty/flagger
+
+<!--
+In practice, this still needs refinement. One of the big challenges is making sure that people are doing this diligence when they need to be. It's difficult enough to get dozens of engineers to buy into a new process; even moreso when they're often unaware they need to participate.
+
+Here's one thing we experimented with: using knowledge of our Rails codebase to flag pull requests making changes to API code for further review.
 -->
 
 #HSLIDE
