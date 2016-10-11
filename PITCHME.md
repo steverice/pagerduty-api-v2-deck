@@ -5,15 +5,13 @@
 
 ## Steve Rice, API Captain, <span class="pd-green">PagerDuty</span>
 
-#VSLIDE
+#VSLIDE?image=assets/images/pagerduty_brand_stamp.png
 
 ## Who am I?
 
-![PagerDuty](assets/images/pagerduty_brand_stamp.png)
-
-- software engineer at PagerDuty since 2013
-- incident resolution platform: triage events, manage incident response
-- Rails, Scala, Backbone, Ember.js
+- software engineer at PagerDuty since 2013 <!-- .element: class="fragment" -->
+- incident resolution platform: triage events, manage incident response <!-- .element: class="fragment" -->
+- Rails, Scala, Backbone, Ember.js <!-- .element: class="fragment" -->
 
 #HSLIDE
 
