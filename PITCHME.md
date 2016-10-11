@@ -18,27 +18,62 @@
 
 # Research
 
-#VSLIDE?image=assets/images/turtles.jpg
-
 <!--
-Here are some test notes
+As with any project, the first thing to do is gather information. Figure out what you want to do with your new API version. Chances are, there are some things about the current version you aren't too happy with, so start by finding better ways and identifying problems you didn't even realize existed.
 -->
 
+#VSLIDE?image=assets/images/turtles.jpg
+
 ## Stand on the Shoulders of Giants
+
+<!--
+APIs are not new; people have been working on this stuff for decades. Especially when the goal of your technology is to interoperate, it pays to leverage the best practices happening in the space.
+-->
 
 #VSLIDE?video=assets/videos/amber-feng.mp4
 
 ## Conferences and Talks
 
+<!--
+Talks are a great way to get ideas and get out of your day-to-day headspace.
+You're here, so you're off to a good start!
+This talk by Amber Feng at Stripe, entitled "Move Fast, Don’t Break the API", set me up with some great ideas about how to manage multiple versions of an API on a technical level.
+-->
+
 #VSLIDE?image=assets/images/dropbox-blog.png
 
 ## Developer Blogs
+
+<!--
+A large part of your change is going to involve publicity. So read up, and find good work by others in the space.
+This post by Leah Culver at Dropbox was a great example of how to be concise and  helpful when talking about a new API version.
+-->
 
 #HSLIDE
 
 # Plan
 
+#VSLIDE?image=assets/images/bike-shed.jpg
+
+## Make decisions.
+
+<!--
+Design requires decision-making. Especially when it comes to things that on the surface appear purely aesthetic (like an API), everyone will have input.
+In some technical areas, it can be quite valuable to have a decision maker whose head is in the game and can make a final call and move on.
+Even better, outsource your decisions if possible. Protocols like OData, JSON API, or GraphQL have done a lot of the standardization work for you so there are fewer decisions left to be made. Remember that REST is an architectural style, not a protocol — you'll end up developing your own. I said "fewer" because you'll still need to make application-specific choices, but reducing the scope of these can help maintain sanity.
+-->
+
 #VSLIDE?gist=e33e5d401e5f8fa9e260ba1b7a20bdd2
+
+<!--
+To kick off PagerDuty API v2, I gathered input from a number of sources:
+- the commonalities in our existing API documentation
+- what made for clean code and what didn't (experience + analysis)
+- discussions with colleagues and interested parties
+- feature requests and customer support: what was causing people pain?
+- analyze third-party, open-source code
+The result was this: an "API v2 vision" that describes the goals of the new API version and the specifics of the patterns we were to formalize.
+-->
 
 #VSLIDE
 
@@ -47,13 +82,38 @@ Here are some test notes
 - Don't change what works <!-- .element: class="fragment" -->
 - What value does this change bring? <!-- .element: class="fragment" -->
 - How will clients consume it? <!-- .element: class="fragment" -->
+- Keep bullets away from feet <!-- .element: class="fragment" -->
 - Documentation is the developer experience <!-- .element: class="fragment" -->
+
+<!--
+When you're working on a new version of your API, you're fighting a war on two fronts: your developers will need to work to adopt, and your company will need to provide the time and resources to make it happen. So focus only on what's most important and will make a meaningful difference for yourselves and your developers.
+At PagerDuty, our API is a key competitive differentiator. When we can say to customers, "sure, you can do that with the API", it has real results. Building an ecosystem makes those conversations even easier; enabling developer productivity is the #1 goal.
+But there's a secondary motivation. Designing APIs is tough. Designing an API to last 10 years is nearly impossible without change. You need to address the decisions that were fine when they were made but are now causing performance, scaling, or quality issues.
+-->
 
 #VSLIDE
 
 ## Change the Plan
 
 ![Changed Includes](assets/images/change-proposal.png)
+
+<!--
+As you develop, things will change. You'll find where your patterns break down. You'll see where you need something different. Other smart people will question your choices.
+Don't ignore these inputs; adapt to them. Have a process that encourages change instead of blocking it.
+-->
+
+#VSLIDE?image=assets/images/api-concerns-proposal.png
+
+## Process is Paramount
+
+#VSLIDE?gist=2109c70ecff5b71d8bc0a072760b03fe
+
+## Process is Paramount
+
+<!--
+The most difficult part of maintaining an API is adapting to change. We need to strike a balance between building new and shiny things and preventing thrash for our developers. As consistency is one of the main tenants of our API, a big challenge was, and remains, keeping new development in line with the API goals without standing in the way of progress.
+
+-->
 
 #HSLIDE
 
@@ -196,6 +256,7 @@ end
 ## Image Credits
 
 - "Stand on the Shoulders of Giants" By Samir Eberlin [CC0], via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Turtles.on.a.stone.in.brazil.jpg
+- "Make Decisions." By SeppVei (Own work) [CC0], via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Bicycle_shed.JPG
 - "Dogfood. Everything." Original source not found. Used without permission.
 - "Keep it maintainable" By David Jones from Isle of Wight, United Kingdom [[CC BY 2.0](http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Mike_O%27Callaghan-Pat_Tillman_Bridge_construction.jpg
 - "Pour over logs" by Timothy Marsee [[CC BY 2.0](http://creativecommons.org/licenses/by/2.0)], via Flickr — https://www.flickr.com/photos/tmarsee530/9899684046
