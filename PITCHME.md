@@ -14,6 +14,40 @@
 - Rails, MySQL, Scala, Cassandra, Kafka, etc. <!-- .element: class="fragment" -->
 - Backbone, Ember.js, Android + iOS <!-- .element: class="fragment" -->
 
+#VSLIDE
+
+![Old dev docs](assets/images/old-dev-docs.png)
+
+https://web.archive.org/web/20130116145245/http://developer.pagerduty.com/
+
+<!--
+Having a public API has always been important to PagerDuty. Since we don't provide any value unless you can feed data to us from monitoring tools, we've always needed an API for those tools to talk to.
+-->
+
+#VSLIDE
+
+```ruby
+class ApiController < ApplicationController
+  # This controller are for communication between the main app server
+  # and other processes in the system.  The idea here is that this
+  # shouldn't be exposed to the outside world.
+```
+
+![API refactor](assets/images/api-v1-refactor.png)
+
+<!--
+And for a long time, we've powered product behavior with simple JSON APIs. Internally, services began to communicate in this manner, but as more external clients like our client-side JavaScript experience and our mobile apps needed ways to talk to the backend, we were developing APIs at a higher level to provide all of the basic data acess and manipulation required by our frontend.
+-->
+
+#VSLIDE
+
+![API announce blog post](assets/images/api-blog-old.png)
+<figcaption>https://web.archive.org/web/20130312085114/http://blog.pagerduty.com/2012/09/you-have-the-power/</figcaption>
+
+<!--
+It wasn't much of a leap, then, to publish the same APIs we'd been using to implement product features so that our customers could do interesting things with them on their own.
+-->
+
 #HSLIDE
 
 # Research
