@@ -17,8 +17,7 @@
 #VSLIDE
 
 ![Old dev docs](assets/images/old-dev-docs.png)
-
-https://web.archive.org/web/20130116145245/http://developer.pagerduty.com/
+<figcaption>https://web.archive.org/web/20130116145245/http://developer.pagerduty.com/</figcaption>
 
 <!--
 Having a public API has always been important to PagerDuty. Since we don't provide any value unless you can feed data to us from monitoring tools, we've always needed an API for those tools to talk to.
@@ -156,8 +155,7 @@ So we used a tool that our developers were already familiar with: GitHub. Contri
 #VSLIDE
 
 ![Flagger in Action](assets/images/flagger.png)
-
-https://github.com/PagerDuty/flagger
+<figcaption>https://github.com/PagerDuty/flagger</figcaption>
 
 <!--
 In practice, this still needs refinement. One of the big challenges is making sure that people are doing this diligence when they need to be. It's difficult enough to get dozens of engineers to buy into a new process; even moreso when they're often unaware they need to participate.
@@ -172,6 +170,7 @@ Here's one thing we experimented with: using knowledge of our Rails codebase to 
 #VSLIDE
 
 ![Stripe API Documentation](assets/images/stripe-api-docs.png)
+<figcaption>https://stripe.com/docs/api</figcaption>
 
 #VSLIDE?image=assets/images/maintainable.jpg
 
@@ -288,6 +287,7 @@ end
 #VSLIDE
 
 ![v1 docs banner](assets/images/v1-docs-banner.png)
+<figcaption>https://v1.developer.pagerduty.com/</figcaption>
 
 #HSLIDE
 
