@@ -3,7 +3,7 @@
 ## API Creation to Iteration
 ### Without the Frustration
 
-## Steve Rice, API Captain, <span class="pd-green">PagerDuty</span>
+#### Steve Rice, API Captain, <span class="pd-green">PagerDuty</span>
 
 #VSLIDE?image=assets/images/pagerduty_brand_stamp.png
 
@@ -11,7 +11,8 @@
 
 - software engineer at PagerDuty since 2013 <!-- .element: class="fragment" -->
 - incident resolution platform: triage events, manage incident response <!-- .element: class="fragment" -->
-- Rails, Scala, Backbone, Ember.js <!-- .element: class="fragment" -->
+- Rails, MySQL, Scala, Cassandra, Kafka, etc. <!-- .element: class="fragment" -->
+- Backbone, Ember.js, Android + iOS <!-- .element: class="fragment" -->
 
 #HSLIDE
 
