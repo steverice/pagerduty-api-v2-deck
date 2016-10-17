@@ -82,18 +82,6 @@ A large part of your change is going to involve publicity. So read up, and find 
 This post by Leah Culver at Dropbox was a great example of how to be concise and helpful when talking about a new API version.
 -->
 
-#VSLIDE
-
-## Gather usage data
-
-- which endpoints aren't being used?
-- which endpoints are being used in ways they shouldn't?
-- which customers are using the APIs?
-
-#VSLIDE?image=assets/images/pour-over.jpg
-
-## Pour over logs
-
 #HSLIDE
 
 # Plan
@@ -119,6 +107,19 @@ To kick off PagerDuty API v2, I gathered input from a number of sources:
 - discussions with colleagues and interested parties
 - feature requests and customer support: what was causing people pain?
 - analyze third-party, open-source code
+-->
+
+#VSLIDE?image=assets/images/pour-over.jpg
+
+## Pour over logs
+
+- which endpoints aren't being used?
+- which endpoints are being used in ways they shouldn't?
+- which customers are using the APIs?
+
+<!--
+A big advantage you have over developing a brand new API is tons of data about your existing API and how people use it. So leverage that data — go through your logs and build reports on which endpoints are popular, which are neglected, what the common patterns are of requests being made, what developers are trying to do with your API that appears painful.
+Talking to your developers directly is valuable, don't neglect that; but make sure you take a look at the big overall picture so you don't end up narrowing in on the specifics of certain developers.
 -->
 
 #VSLIDE?gist=e33e5d401e5f8fa9e260ba1b7a20bdd2
