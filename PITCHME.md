@@ -67,6 +67,9 @@ APIs are not new; people have been working on this stuff for decades. Especially
 
 ## Conferences and Talks
 
+<figcaption>https://www.heavybit.com/library/video/move-fast-dont-break-api/</figcaption>
+<figcaption>http://amberonrails.com/move-fast-dont-break-your-api/</figcaption>
+
 <!--
 Talks are a great way to get ideas and get out of your day-to-day headspace.
 You're here, so you're off to a good start!
@@ -76,6 +79,8 @@ This talk by Amber Feng at Stripe, entitled "Move Fast, Don’t Break the API", 
 #VSLIDE?image=assets/images/dropbox-blog.png
 
 ## Developer Blogs
+
+<figcaption>https://blogs.dropbox.com/developers/2015/04/a-preview-of-the-new-dropbox-api-v2/</figcaption>
 
 <!--
 A large part of your change is going to involve publicity. So read up, and find good work by others in the space.
