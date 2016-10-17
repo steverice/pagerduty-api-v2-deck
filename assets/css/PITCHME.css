@@ -149,3 +149,12 @@ body div:first-child img {
 #image-credits + ul {
   font-size: 0.5em;
 }
+
+.reveal figcaption {
+  font-size: 0.4em;
+}
+
+.reveal p + figcaption {
+  position: relative;
+  top: -4em; /* If this is an inline image caption, move it up a bit */
+}
