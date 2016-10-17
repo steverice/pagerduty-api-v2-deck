@@ -151,7 +151,18 @@ But there's a secondary motivation. Designing APIs is tough. Designing an API to
 
 #VSLIDE
 
+## Highlights
+
 - header- and key-based versioning <!-- .element: class="fragment" -->
+- [vendor MIME type](http://www.iana.org/assignments/media-types/application/vnd.pagerduty+json) <!-- .element: class="fragment" -->
+- canonical API subdomain <!-- .element: class="fragment" -->
+- performance tweaks: counts <!-- .element: class="fragment" -->
+- consistency <!-- .element: class="fragment" -->
+
+<!--
+register media type under vendor tree with IANA
+schema consistency, path consistency, parameter consistency, response consistency
+-->
 
 #VSLIDE
 
