@@ -79,8 +79,20 @@ This talk by Amber Feng at Stripe, entitled "Move Fast, Don’t Break the API", 
 
 <!--
 A large part of your change is going to involve publicity. So read up, and find good work by others in the space.
-This post by Leah Culver at Dropbox was a great example of how to be concise and  helpful when talking about a new API version.
+This post by Leah Culver at Dropbox was a great example of how to be concise and helpful when talking about a new API version.
 -->
+
+#VSLIDE
+
+## Gather usage data
+
+- which endpoints aren't being used?
+- which endpoints are being used in ways they shouldn't?
+- which customers are using the APIs?
+
+#VSLIDE?image=assets/images/pour-over.jpg
+
+## Pour over logs
 
 #HSLIDE
 
@@ -96,7 +108,9 @@ In some technical areas, it can be quite valuable to have a decision maker whose
 Even better, outsource your decisions if possible. Protocols like OData, JSON API, or GraphQL have done a lot of the standardization work for you so there are fewer decisions left to be made. Remember that REST is an architectural style, not a protocol — you'll end up developing your own. I said "fewer" because you'll still need to make application-specific choices, but reducing the scope of these can help maintain sanity.
 -->
 
-#VSLIDE?gist=e33e5d401e5f8fa9e260ba1b7a20bdd2
+#VSLIDE
+
+![API v2 Concerns Hackpad](assets/images/api-v2-concerns.png)
 
 <!--
 To kick off PagerDuty API v2, I gathered input from a number of sources:
@@ -105,6 +119,11 @@ To kick off PagerDuty API v2, I gathered input from a number of sources:
 - discussions with colleagues and interested parties
 - feature requests and customer support: what was causing people pain?
 - analyze third-party, open-source code
+-->
+
+#VSLIDE?gist=e33e5d401e5f8fa9e260ba1b7a20bdd2
+
+<!--
 The result was this: an "API v2 vision" that describes the goals of the new API version and the specifics of the patterns we were to formalize.
 -->
 
@@ -123,6 +142,10 @@ When you're working on a new version of your API, you're fighting a war on two f
 At PagerDuty, our API is a key competitive differentiator. When we can say to customers, "sure, you can do that with the API", it has real results. Building an ecosystem makes those conversations even easier; enabling developer productivity is the #1 goal.
 But there's a secondary motivation. Designing APIs is tough. Designing an API to last 10 years is nearly impossible without change. You need to address the decisions that were fine when they were made but are now causing performance, scaling, or quality issues.
 -->
+
+#VSLIDE
+
+- header- and key-based versioning <!-- .element: class="fragment" -->
 
 #VSLIDE
 
@@ -240,25 +263,19 @@ end
 
 #VSLIDE
 
-## Automate
+![Make clients use the new version](assets/images/request-v11a.png)
 
-![Automated API Testing](assets/images/automated-api-testing.png)
-
-#HSLIDE
-
-# Analyze
+<!--
+A huge advantage to using your own API is that you don't need to make a single enormous, scary change.
+One of the most beneficial things we did at PagerDuty was set up our v2 API to work exactly like our v1 API, then iterate piece by piece on the changes we needed to make it compliant with the new version goals.
+At the very beginning, then, we switched our internal clients to use the new API version. As we made changes, we'd immediately be implementing them in clients at the same time so we could tell right away if a change didn't make sense or was more difficult to work with than we'd anticipated.
+-->
 
 #VSLIDE
 
-## Gather usage data
+## Automate
 
-- which endpoints aren't being used?
-- which endpoints are being used in ways they shouldn't?
-- which customers are using the APIs?
-
-#VSLIDE?image=assets/images/pour-over.jpg
-
-## Pour over logs
+![Automated API Testing](assets/images/automated-api-testing.png)
 
 #HSLIDE
 
