@@ -154,8 +154,10 @@ But there's a secondary motivation. Designing APIs is tough. Designing an API to
 ## Highlights
 
 - header- and key-based versioning <!-- .element: class="fragment" -->
-- [vendor MIME type](http://www.iana.org/assignments/media-types/application/vnd.pagerduty+json) <!-- .element: class="fragment" -->
+- vendor MIME type <!-- .element: class="fragment" -->
 - canonical API subdomain <!-- .element: class="fragment" -->
+- reference types <!-- .element: class="fragment" -->
+- standard data types <!-- .element: class="fragment" -->
 - performance tweaks: counts <!-- .element: class="fragment" -->
 - consistency <!-- .element: class="fragment" -->
 
