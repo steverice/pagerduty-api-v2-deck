@@ -46,6 +46,15 @@ And for a long time, we've powered product behavior with simple JSON APIs. Inter
 
 <!--
 It wasn't much of a leap, then, to publish the same APIs we'd been using to implement product features so that our customers could do interesting things with them on their own.
+This led us to a culture of "publish every API" — which is a great sentiment, but has its downsides if you're not careful.
+-->
+
+#VSLIDE
+
+![Email Filters v1 API](assets/images/email-filters-v1.png)
+
+<!--
+When making an API endpoint is a requirement to implement a feature, and making it public is automatic, you can easily end up with a series of disjoint API endpoints whose implementation focused more on getting something functional out the door than considering the developer experience.
 -->
 
 #HSLIDE
