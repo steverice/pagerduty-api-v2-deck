@@ -9,6 +9,7 @@
 
 ## Who am I?
 
+- Steve Rice
 - software engineer at PagerDuty since 2013 <!-- .element: class="fragment" -->
 - incident resolution platform: triage events, manage incident response <!-- .element: class="fragment" -->
 - Rails, MySQL, Scala, Cassandra, Kafka, etc. <!-- .element: class="fragment" -->
