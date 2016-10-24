@@ -391,11 +391,10 @@ At the very beginning, then, we switched our internal clients to use the new API
 ## Trust, but Verify
 
 ```ruby
-def self.compare_json(original, modified, consider_ordering = false)
-  return true if original == modified
+def self.compare_json(old, new, consider_ordering = false)
+  return true if old == new
 
-  original = JSON.parse(original)
-  modified = JSON.parse(modified)
+  old, new = *[old, new].map(&JSON.method(:parse))
 
   unless consider_ordering
     # Recursively sort the hash keys so the diff ignores ordering
@@ -405,9 +404,6 @@ def self.compare_json(original, modified, consider_ordering = false)
     # Quick test, in case the sorted hashes are equal
     return true if original == modified
   end
-
-  diff = Diffy::Diff.new(JSON.pretty_generate(original), JSON.pretty_generate(modified), context: 1)
-  puts diff.to_s(:color)
   return false
 end
 ```
