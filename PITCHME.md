@@ -104,13 +104,27 @@ This post by Leah Culver at Dropbox was a great example of how to be concise and
 
 ## Make decisions.
 
-FIXME: more protocol examples
-link to resources on those things
-
 <!--
 Design requires decision-making. Especially when it comes to things that on the surface appear purely aesthetic (like an API), everyone will have input.
 In some technical areas, it can be quite valuable to have a decision maker whose head is in the game and can make a final call and move on.
-Even better, outsource your decisions if possible. Protocols like OData, JSON API, or GraphQL have done a lot of the standardization work for you so there are fewer decisions left to be made. Remember that REST is an architectural style, not a protocol — you'll end up developing your own. I said "fewer" because you'll still need to make application-specific choices, but reducing the scope of these can help maintain sanity.
+Even better, outsource your decisions if possible.
+-->
+
+#VSLIDE
+
+HAL: http://stateless.co/hal_specification.html
+OData: http://www.odata.org
+Collection+JSON: https://github.com/collection-json/spec
+JSON-API: http://jsonapi.org
+JSON-LD: http://json-ld.org
+GData: https://developers.google.com/gdata/
+GraphQL: http://graphql.org
+Siren: https://github.com/kevinswiber/siren
+
+https://sookocheff.com/post/api/on-choosing-a-hypermedia-format/
+
+<!--
+Protocols/media types like OData, JSON API, GData, or GraphQL, Siren have done a lot of the standardization work for you so there are fewer decisions left to be made, but be aware of the tradeoffs. Remember that REST is an architectural style, not a protocol — you'll end up developing your own. I said "fewer" because you'll still need to make application-specific choices, but reducing the scope of these can help maintain sanity.
 -->
 
 #VSLIDE
