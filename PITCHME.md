@@ -102,6 +102,8 @@ This post by Leah Culver at Dropbox was a great example of how to be concise and
 
 #VSLIDE
 
+### Protocols and Hypermedia Types
+
 - HAL: http://stateless.co/hal_specification.html
 - OData: http://www.odata.org
 - Collection+JSON: https://github.com/collection-json/spec
