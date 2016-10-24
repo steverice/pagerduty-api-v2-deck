@@ -256,7 +256,7 @@ Here's one thing we experimented with: using knowledge of our Rails codebase to 
 
 #VSLIDE
 
-## Choose domain-specific technologies
+## Domain-specific technologies
 
 ![API Spec Formats](assets/images/api-specs.png)
 
