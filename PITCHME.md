@@ -463,7 +463,7 @@ Here's the announcement
 
 ![Deprecation plan](assets/images/sunsetting-plan.png)
 
-#VSLIDE
+#VSLIDE?image=assets/images/bff.jpg
 
 ## BFF
 
