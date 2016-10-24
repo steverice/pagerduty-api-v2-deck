@@ -224,8 +224,6 @@ Originally, we had an email list that we'd use to discuss new API changes. It wa
 
 #VSLIDE?gist=2109c70ecff5b71d8bc0a072760b03fe
 
-## Process is Paramount
-
 <!--
 So we used a tool that our developers were already familiar with: GitHub. Contributors can now write in Markdown, comment on specific lines within the proposal, and have the back-and-forth type of review discussion that GitHub facilities. Familiar GitHub semantics like merging a pull request to indicate finality and version tracking to see how a proposal evolved gives much more context of the past and current state of a proposal. Plus, nice things like the abilitiy to link directly to something being discussed.
 -->
