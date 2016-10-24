@@ -308,19 +308,55 @@ class Api::V2::EscalationPolicyAdapter::Base < ApiDuty::Adapter
 end
 ```
 
-#VSLIDE?gist=dc74ca6f7faaf49c7e748c483eaf7178
+#VSLIDE
 
 ## Keep it Simple
+
+```ruby
+module Api
+  module V2
+    class SchedulesController < Api::V1::SchedulesController
+    end
+  end
+end
+```
 
 <!--
 Schedules controller inheritance
 -->
 
-#VSLIDE
+#VSLIDE?image=assets/images/farfalle.jpg
 
-## Be pragmatic?image=assets/images/farfalle.jpg
+## Be pragmatic
 
 ### DRY is not a god
+
+```ruby
+def unwrapped_incident_json
+  # V2+: incident object is wrapped.
+  json[:incident]
+end
+
+def assert_assigned_to_user(json, user)
+  # V2+: assigned_to_user is removed
+  assert_not_include json.keys, 'assigned_to_user'
+end
+
+def assert_reassigned_to_user(json, user)
+  # V2+: assigned_to_user is removed
+  assert_not_include json.keys, 'assigned_to_user'
+end
+
+def assert_incident_count(expected, json)
+  assert_equal(expected, json)
+end
+
+def assert_ile_request_method(incident, request_method)
+  incident.clear_les_log_entries
+  ile = incident.les_log_entries(limit: 1).last
+  assert_equal request_method, ile.request_method
+end
+```
 
 <!--
 DRY is not a god
@@ -349,6 +385,32 @@ At the very beginning, then, we switched our internal clients to use the new API
 ## Automate
 
 ![Automated API Testing](assets/images/automated-api-testing.png)
+
+#VSLIDE
+
+## Trust, but Verify
+
+```ruby
+def self.compare_json(original, modified, consider_ordering = false)
+  return true if original == modified
+
+  original = JSON.parse(original)
+  modified = JSON.parse(modified)
+
+  unless consider_ordering
+    # Recursively sort the hash keys so the diff ignores ordering
+    original = self.sort_recursively(original)
+    modified = self.sort_recursively(modified)
+
+    # Quick test, in case the sorted hashes are equal
+    return true if original == modified
+  end
+
+  diff = Diffy::Diff.new(JSON.pretty_generate(original), JSON.pretty_generate(modified), context: 1)
+  puts diff.to_s(:color)
+  return false
+end
+```
 
 #HSLIDE
 
