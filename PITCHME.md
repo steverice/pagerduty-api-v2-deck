@@ -465,6 +465,16 @@ Here's the announcement
 
 ![Deprecation plan](assets/images/sunsetting-plan.png)
 
+#VSLIDE
+
+## BFF
+
+#VSLIDE
+
+## Moar Integrations
+
+![Webhooks/Integrations](assets/images/webhooks-integrations.png)
+
 #HSLIDE?image=assets/images/never-ending-story.jpg
 
 # Fin?
@@ -487,4 +497,5 @@ Here's the announcement
 - "Dogfood. Everything." Original source not found. Used without permission.
 - "Keep it maintainable" By David Jones from Isle of Wight, United Kingdom [[CC BY 2.0](http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Mike_O%27Callaghan-Pat_Tillman_Bridge_construction.jpg
 - "Pour over logs" by Timothy Marsee [[CC BY 2.0](http://creativecommons.org/licenses/by/2.0)], via Flickr — https://www.flickr.com/photos/tmarsee530/9899684046
+- "BFF" By Guillaume Paumier (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0)], via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Best_Frends_Forever_-_Golden_Gate_bridge_guard_rail_166.jpg
 - "Fin?" Copyright 1984 Warner Bros. Pictures, via Cinema Autopsy — https://blog.cinemaautopsy.com/2013/04/02/film-review-the-neverending-story-1984/
