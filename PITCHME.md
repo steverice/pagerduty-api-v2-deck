@@ -500,10 +500,6 @@ Here’s the announcement
 
 #HSLIDE
 
-# Q&A
-
-#HSLIDE
-
 # Appendix
 
 #VSLIDE
