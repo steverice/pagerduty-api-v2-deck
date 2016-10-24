@@ -96,20 +96,6 @@ A large part of your change is going to involve publicity. So read up, and find 
 This post by Leah Culver at Dropbox was a great example of how to be concise and helpful when talking about a new API version.
 -->
 
-#HSLIDE
-
-# Plan
-
-#VSLIDE?image=assets/images/bike-shed.jpg
-
-## Make decisions.
-
-<!--
-Design requires decision-making. Especially when it comes to things that on the surface appear purely aesthetic (like an API), everyone will have input.
-In some technical areas, it can be quite valuable to have a decision maker whose head is in the game and can make a final call and move on.
-Even better, outsource your decisions if possible.
--->
-
 #VSLIDE
 
 - HAL: http://stateless.co/hal_specification.html
@@ -125,6 +111,20 @@ Even better, outsource your decisions if possible.
 
 <!--
 Protocols/media types like OData, JSON API, GData, or GraphQL, Siren have done a lot of the standardization work for you so there are fewer decisions left to be made, but be aware of the tradeoffs. Remember that REST is an architectural style, not a protocol — you'll end up developing your own. I said "fewer" because you'll still need to make application-specific choices, but reducing the scope of these can help maintain sanity.
+-->
+
+#HSLIDE
+
+# Plan
+
+#VSLIDE?image=assets/images/bike-shed.jpg
+
+## Make decisions.
+
+<!--
+Design requires decision-making. Especially when it comes to things that on the surface appear purely aesthetic (like an API), everyone will have input.
+In some technical areas, it can be quite valuable to have a decision maker whose head is in the game and can make a final call and move on.
+Even better, outsource your decisions if possible.
 -->
 
 #VSLIDE
