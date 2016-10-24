@@ -451,10 +451,6 @@ Here's the announcement
 ![v1 docs banner](assets/images/v1-docs-banner.png)
 <figcaption>https://v1.developer.pagerduty.com/</figcaption>
 
-#HSLIDE
-
-# Measure
-
 #VSLIDE
 
 ![API v2 Use Metrics](assets/images/v2-use-metrics.png)
