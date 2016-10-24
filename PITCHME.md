@@ -173,10 +173,8 @@ The result was this: an "API v2 vision" that describes the goals of the new API 
 ## Pick your Battles
 
 - Don't change what works <!-- .element: class="fragment" -->
-- What value does this change bring? <!-- .element: class="fragment" -->
-- How will clients consume it? <!-- .element: class="fragment" -->
+- Prioritize <!-- .element: class="fragment" -->
 - Keep bullets away from feet <!-- .element: class="fragment" -->
-- Documentation is the developer experience <!-- .element: class="fragment" -->
 
 <!--
 When you're working on a new version of your API, you're fighting a war on two fronts: your developers will need to work to adopt, and your company will need to provide the time and resources to make it happen. So focus only on what's most important and will make a meaningful difference for yourselves and your developers.
