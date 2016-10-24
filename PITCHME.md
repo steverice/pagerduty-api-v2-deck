@@ -6,7 +6,8 @@
 #VSLIDE?image=assets/images/golden-gate.jpg
 
 ### Steve Rice
-##### web development: frontend, backend, APIs
+##### software engineer
+##### frontend, backend, APIs
 ##### API Captain at <span class="pd-green">PagerDuty</span> in San Francisco
 
 #VSLIDE?image=assets/images/pagerduty_brand_stamp.png
