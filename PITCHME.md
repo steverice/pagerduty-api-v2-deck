@@ -3,15 +3,19 @@
 ## API Creation to Iteration
 ### Without the Frustration
 
-#### Steve Rice, API Captain, <span class="pd-green">PagerDuty</span>
+#VSLIDE?image=assets/images/golden-gate.jpg
+
+### Steve Rice
+##### web development: frontend, backend, APIs
+##### API Captain at <span class="pd-green">PagerDuty</span> in San Francisco
 
 #VSLIDE?image=assets/images/pagerduty_brand_stamp.png
 
-## Who am I?
+## What is PagerDuty?
 
-- Steve Rice
-- software engineer at PagerDuty since 2013 <!-- .element: class="fragment" -->
-- incident resolution platform: triage events, manage incident response <!-- .element: class="fragment" -->
+- incident resolution platform <!-- .element: class="fragment" -->
+- triage events <!-- .element: class="fragment" -->
+- manage incident response <!-- .element: class="fragment" -->
 - Rails, MySQL, Scala, Cassandra, Kafka, etc. <!-- .element: class="fragment" -->
 - Backbone, Ember.js, Android + iOS <!-- .element: class="fragment" -->
 
@@ -487,6 +491,7 @@ Here's the announcement
 
 ## Image Credits
 
+- "Steve Rice" By Steve Rice © 2016 (Own work), all rights reserved
 - "Stand on the Shoulders of Giants" By Samir Eberlin [CC0], via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Turtles.on.a.stone.in.brazil.jpg
 - "Make Decisions." By SeppVei (Own work) [CC0], via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Bicycle_shed.JPG
 - "Be Pragmatic" By Liveon001 © Travis K. Witt (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0) or GFDL (http://www.gnu.org/copyleft/fdl.html)], via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Farfalle_Pasta.JPG
