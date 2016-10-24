@@ -393,7 +393,7 @@ def self.compare_json(old, new, consider_ordering = false)
   old, new = *[old, new].map(&JSON.method(:parse))
 
   unless consider_ordering
-    # Recursively sort the hash keys so the diff ignores ordering
+    # Recursively sort hash keys so the diff ignores ordering
     original = self.sort_recursively(original)
     modified = self.sort_recursively(modified)
 
