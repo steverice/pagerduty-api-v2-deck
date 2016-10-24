@@ -481,6 +481,19 @@ Here’s the announcement
 
 ## Moar Integrations
 
+#VSLIDE
+
+<p style="max-width: 700px; margin: 0 auto;">
+![burndown](assets/images/burn-it-down.png)
+![burnup](assets/images/version-burnup.png)
+</p>
+
+#VSLIDE
+
+## It takes a village
+
+![Team](assets/images/team/mosaic.jpg) <!-- .element: style="max-height:70%;width:auto;" -->
+
 #HSLIDE?image=assets/images/never-ending-story.jpg
 
 # Fin?
