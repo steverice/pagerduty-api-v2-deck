@@ -412,6 +412,10 @@ end
 
 ![PagerCon Talk: API 0 to 30](assets/images/pagercon-talk.jpg)
 
+#VSLIDE
+
+![Evangelize Adapters](assets/images/evangelize-adapters.png)
+
 #HSLIDE
 
 # Connect
