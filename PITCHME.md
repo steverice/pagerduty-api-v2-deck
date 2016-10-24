@@ -89,9 +89,7 @@ This talk by Amber Feng at Stripe, entitled "Move Fast, Don’t Break the API", 
 
 ## Developer Blogs
 
-FIXME: green on white no good
-
-<figcaption>https://blogs.dropbox.com/developers/2015/04/a-preview-of-the-new-dropbox-api-v2/</figcaption>
+<figcaption><a href="https://blogs.dropbox.com/developers/2015/04/a-preview-of-the-new-dropbox-api-v2/" style="color: white">https://blogs.dropbox.com/developers/2015/04/a-preview-of-the-new-dropbox-api-v2/</a></figcaption>
 
 <!--
 A large part of your change is going to involve publicity. So read up, and find good work by others in the space.
