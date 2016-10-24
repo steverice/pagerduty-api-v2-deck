@@ -260,8 +260,6 @@ Here's one thing we experimented with: using knowledge of our Rails codebase to 
 
 ## Choose domain-specific technologies
 
-FIXME: image cut off
-
 ![API Spec Formats](assets/images/api-specs.png)
 
 #VSLIDE?gist=44dca2fec85c13810f1c102bacedfa1e
