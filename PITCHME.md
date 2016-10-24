@@ -112,16 +112,16 @@ Even better, outsource your decisions if possible.
 
 #VSLIDE
 
-HAL: http://stateless.co/hal_specification.html
-OData: http://www.odata.org
-Collection+JSON: https://github.com/collection-json/spec
-JSON-API: http://jsonapi.org
-JSON-LD: http://json-ld.org
-GData: https://developers.google.com/gdata/
-GraphQL: http://graphql.org
-Siren: https://github.com/kevinswiber/siren
+- HAL: http://stateless.co/hal_specification.html
+- OData: http://www.odata.org
+- Collection+JSON: https://github.com/collection-json/spec
+- JSON-API: http://jsonapi.org
+- JSON-LD: http://json-ld.org
+- GData: https://developers.google.com/gdata/
+- GraphQL: http://graphql.org
+- Siren: https://github.com/kevinswiber/siren
 
-https://sookocheff.com/post/api/on-choosing-a-hypermedia-format/
+<figcaption>https://sookocheff.com/post/api/on-choosing-a-hypermedia-format/</figcaption>
 
 <!--
 Protocols/media types like OData, JSON API, GData, or GraphQL, Siren have done a lot of the standardization work for you so there are fewer decisions left to be made, but be aware of the tradeoffs. Remember that REST is an architectural style, not a protocol — you'll end up developing your own. I said "fewer" because you'll still need to make application-specific choices, but reducing the scope of these can help maintain sanity.
