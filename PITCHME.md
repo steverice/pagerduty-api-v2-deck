@@ -168,6 +168,12 @@ A big advantage you have over developing a brand new API is tons of data about y
 Talking to your developers directly is valuable, don’t neglect that; but make sure you take a look at the big overall picture so you don’t end up narrowing in on the specifics of certain developers.
 -->
 
+#VSLIDE?gist=2f939ec894dfadc749bd1ac4b74c3d13
+
+<!--
+Here's one example of a pattern established and supported by the usage data.
+-->
+
 #VSLIDE?gist=e33e5d401e5f8fa9e260ba1b7a20bdd2
 
 <!--
