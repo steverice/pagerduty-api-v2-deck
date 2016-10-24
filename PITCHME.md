@@ -25,7 +25,7 @@
 <figcaption>https://web.archive.org/web/20130116145245/http://developer.pagerduty.com/</figcaption>
 
 <!--
-Having a public API has always been important to PagerDuty. Since we don't provide any value unless you can feed data to us from monitoring tools, we've always needed an API for those tools to talk to.
+Having a public API has always been important to PagerDuty. Since we don’t provide any value unless you can feed data to us from monitoring tools, we’ve always needed an API for those tools to talk to.
 -->
 
 #VSLIDE
@@ -33,13 +33,13 @@ Having a public API has always been important to PagerDuty. Since we don't provi
 ```ruby
 # This controller is for communication between the main app
 # server and other processes in the system. The idea here is
-# that this shouldn't be exposed to the outside world.
+# that this shouldn’t be exposed to the outside world.
 ```
 
 ![API refactor](assets/images/api-v1-refactor.png)
 
 <!--
-And for a long time, we've powered product behavior with simple JSON APIs. Internally, services began to communicate in this manner, but as more external clients like our client-side JavaScript experience and our mobile apps needed ways to talk to the backend, we were developing APIs at a higher level to provide all of the basic data acess and manipulation required by our frontend.
+And for a long time, we’ve powered product behavior with simple JSON APIs. Internally, services began to communicate in this manner, but as more external clients like our client-side JavaScript experience and our mobile apps needed ways to talk to the backend, we were developing APIs at a higher level to provide all of the basic data acess and manipulation required by our frontend.
 -->
 
 #VSLIDE
@@ -48,8 +48,8 @@ And for a long time, we've powered product behavior with simple JSON APIs. Inter
 <figcaption>https://web.archive.org/web/20130312085114/http://blog.pagerduty.com/2012/09/you-have-the-power/</figcaption>
 
 <!--
-It wasn't much of a leap, then, to publish the same APIs we'd been using to implement product features so that our customers could do interesting things with them on their own.
-This led us to a culture of "publish every API" — which is a great sentiment, but has its downsides if you're not careful.
+It wasn’t much of a leap, then, to publish the same APIs we’d been using to implement product features so that our customers could do interesting things with them on their own.
+This led us to a culture of "publish every API" — which is a great sentiment, but has its downsides if you’re not careful.
 -->
 
 #VSLIDE
@@ -65,7 +65,7 @@ When making an API endpoint is a requirement to implement a feature, and making 
 # Research
 
 <!--
-As with any project, the first thing to do is gather information. Figure out what you want to do with your new API version. Chances are, there are some things about the current version you aren't too happy with, so start by finding better ways and identifying problems you didn't even realize existed.
+As with any project, the first thing to do is gather information. Figure out what you want to do with your new API version. Chances are, there are some things about the current version you aren’t too happy with, so start by finding better ways and identifying problems you didn’t even realize existed.
 -->
 
 #VSLIDE?image=assets/images/turtles.jpg
@@ -85,7 +85,7 @@ APIs are not new; people have been working on this stuff for decades. Especially
 
 <!--
 Talks are a great way to get ideas and get out of your day-to-day headspace.
-You're here, so you're off to a good start!
+You’re here, so you’re off to a good start!
 This talk by Amber Feng at Stripe, entitled "Move Fast, Don’t Break the API", set me up with some great ideas about how to manage multiple versions of an API on a technical level.
 -->
 
@@ -114,7 +114,7 @@ This post by Leah Culver at Dropbox was a great example of how to be concise and
 <figcaption>https://sookocheff.com/post/api/on-choosing-a-hypermedia-format/</figcaption>
 
 <!--
-Protocols/media types like OData, JSON API, GData, or GraphQL, Siren have done a lot of the standardization work for you so there are fewer decisions left to be made, but be aware of the tradeoffs. Remember that REST is an architectural style, not a protocol — you'll end up developing your own. I said "fewer" because you'll still need to make application-specific choices, but reducing the scope of these can help maintain sanity.
+Protocols/media types like OData, JSON API, GData, or GraphQL, Siren have done a lot of the standardization work for you so there are fewer decisions left to be made, but be aware of the tradeoffs. Remember that REST is an architectural style, not a protocol — you’ll end up developing your own. I said "fewer" because you’ll still need to make application-specific choices, but reducing the scope of these can help maintain sanity.
 -->
 
 #HSLIDE
@@ -138,7 +138,7 @@ Even better, outsource your decisions if possible.
 <!--
 To kick off PagerDuty API v2, I gathered input from a number of sources:
 - the commonalities in our existing API documentation
-- what made for clean code and what didn't (experience + analysis)
+- what made for clean code and what didn’t (experience + analysis)
 - discussions with colleagues and interested parties
 - feature requests and customer support: what was causing people pain?
 -->
@@ -150,20 +150,20 @@ To kick off PagerDuty API v2, I gathered input from a number of sources:
 <figcaption style="color: white">https://github.com/dropbox/pygerduty</figcaption>
 
 <!--
-Go to the source — literally. We're fortunate enough to have a large community of developers who write and publish code for talking to the PagerDuty APIs in a variety of languages. Looking at this code can give you a fresh perspective on how developers are interpreting your API's documentation and patterns, helping you look for where developers need to jump through hoops and you could perhaps provide a better experience.
+Go to the source — literally. We’re fortunate enough to have a large community of developers who write and publish code for talking to the PagerDuty APIs in a variety of languages. Looking at this code can give you a fresh perspective on how developers are interpreting your API’s documentation and patterns, helping you look for where developers need to jump through hoops and you could perhaps provide a better experience.
 -->
 
 #VSLIDE?image=assets/images/pour-over.jpg
 
 ## Pour over logs
 
-- which endpoints aren't being used?
-- which endpoints are being used in ways they shouldn't?
+- which endpoints aren’t being used?
+- which endpoints are being used in ways they shouldn’t?
 - which customers are using the APIs?
 
 <!--
 A big advantage you have over developing a brand new API is tons of data about your existing API and how people use it. So leverage that data — go through your logs and build reports on which endpoints are popular, which are neglected, what the common patterns are of requests being made, what developers are trying to do with your API that appears painful.
-Talking to your developers directly is valuable, don't neglect that; but make sure you take a look at the big overall picture so you don't end up narrowing in on the specifics of certain developers.
+Talking to your developers directly is valuable, don’t neglect that; but make sure you take a look at the big overall picture so you don’t end up narrowing in on the specifics of certain developers.
 -->
 
 #VSLIDE?gist=e33e5d401e5f8fa9e260ba1b7a20bdd2
@@ -176,14 +176,14 @@ The result was this: an "API v2 vision" that describes the goals of the new API 
 
 ## Pick your Battles
 
-- Don't change what works <!-- .element: class="fragment" -->
+- Don’t change what works <!-- .element: class="fragment" -->
 - Prioritize <!-- .element: class="fragment" -->
 - Keep bullets away from feet <!-- .element: class="fragment" -->
 
 <!--
-When you're working on a new version of your API, you're fighting a war on two fronts: your developers will need to work to adopt, and your company will need to provide the time and resources to make it happen. So focus only on what's most important and will make a meaningful difference for yourselves and your developers.
+When you’re working on a new version of your API, you’re fighting a war on two fronts: your developers will need to work to adopt, and your company will need to provide the time and resources to make it happen. So focus only on what’s most important and will make a meaningful difference for yourselves and your developers.
 At PagerDuty, our API is a key competitive differentiator. When we can say to customers, "sure, you can do that with the API", it has real results. Building an ecosystem makes those conversations even easier; enabling developer productivity is the #1 goal.
-But there's a secondary motivation. Designing APIs is tough. Designing an API to last 10 years is nearly impossible without change. You need to address the decisions that were fine when they were made but are now causing performance, scaling, or quality issues.
+But there’s a secondary motivation. Designing APIs is tough. Designing an API to last 10 years is nearly impossible without change. You need to address the decisions that were fine when they were made but are now causing performance, scaling, or quality issues.
 -->
 
 #VSLIDE
@@ -209,8 +209,8 @@ schema consistency, path consistency, parameter consistency, response consistenc
 ![Changed Includes](assets/images/change-proposal.png)
 
 <!--
-As you develop, things will change. You'll find where your patterns break down. You'll see where you need something different. Other smart people will question your choices.
-Don't ignore these inputs; adapt to them. Have a process that encourages change instead of blocking it.
+As you develop, things will change. You’ll find where your patterns break down. You’ll see where you need something different. Other smart people will question your choices.
+Don’t ignore these inputs; adapt to them. Have a process that encourages change instead of blocking it.
 -->
 
 #VSLIDE?image=assets/images/api-concerns-proposal.png
@@ -219,7 +219,7 @@ Don't ignore these inputs; adapt to them. Have a process that encourages change 
 
 <!--
 The most difficult part of maintaining an API is adapting to change. We need to strike a balance between building new and shiny things and preventing thrash for our developers. As consistency is one of the main tenants of our API, a big challenge was, and remains, keeping new development in line with the API goals without standing in the way of progress.
-Originally, we had an email list that we'd use to discuss new API changes. It was common knowledge among the engineers that if you wanted to make an API change, it would need to be proposed to the email group where our API Czar sat. But this was slow, cumbersome, and difficult to make sure the right discussion happened and translated into the proper course of action.
+Originally, we had an email list that we’d use to discuss new API changes. It was common knowledge among the engineers that if you wanted to make an API change, it would need to be proposed to the email group where our API Czar sat. But this was slow, cumbersome, and difficult to make sure the right discussion happened and translated into the proper course of action.
 -->
 
 #VSLIDE?gist=2109c70ecff5b71d8bc0a072760b03fe
@@ -234,9 +234,9 @@ So we used a tool that our developers were already familiar with: GitHub. Contri
 <figcaption>https://github.com/PagerDuty/flagger</figcaption>
 
 <!--
-In practice, this still needs refinement. One of the big challenges is making sure that people are doing this diligence when they need to be. It's difficult enough to get dozens of engineers to buy into a new process; even moreso when they're often unaware they need to participate.
+In practice, this still needs refinement. One of the big challenges is making sure that people are doing this diligence when they need to be. It’s difficult enough to get dozens of engineers to buy into a new process; even moreso when they’re often unaware they need to participate.
 
-Here's one thing we experimented with: using knowledge of our Rails codebase to flag pull requests making changes to API code for further review.
+Here’s one thing we experimented with: using knowledge of our Rails codebase to flag pull requests making changes to API code for further review.
 -->
 
 #HSLIDE
@@ -337,12 +337,12 @@ end
 
 def assert_assigned_to_user(json, user)
   # V2+: assigned_to_user is removed
-  assert_not_include json.keys, 'assigned_to_user'
+  assert_not_include json.keys, ’assigned_to_user’
 end
 
 def assert_reassigned_to_user(json, user)
   # V2+: assigned_to_user is removed
-  assert_not_include json.keys, 'assigned_to_user'
+  assert_not_include json.keys, ’assigned_to_user’
 end
 
 def assert_incident_count(expected, json)
@@ -373,9 +373,9 @@ DRY is not a god
 ![Make clients use the new version](assets/images/request-v11a.png)
 
 <!--
-A huge advantage to using your own API is that you don't need to make a single enormous, scary change.
+A huge advantage to using your own API is that you don’t need to make a single enormous, scary change.
 One of the most beneficial things we did at PagerDuty was set up our v2 API to work exactly like our v1 API, then iterate piece by piece on the changes we needed to make it compliant with the new version goals.
-At the very beginning, then, we switched our internal clients to use the new API version. As we made changes, we'd immediately be implementing them in clients at the same time so we could tell right away if a change didn't make sense or was more difficult to work with than we'd anticipated.
+At the very beginning, then, we switched our internal clients to use the new API version. As we made changes, we’d immediately be implementing them in clients at the same time so we could tell right away if a change didn’t make sense or was more difficult to work with than we’d anticipated.
 -->
 
 #VSLIDE
@@ -429,7 +429,7 @@ Basic auth deprecation letter
 <figcaption>https://www.pagerduty.com/blog/pagerduty-api-v2-now-in-beta/</figcaption>
 
 <!--
-Here's the announcement
+Here’s the announcement
 -->
 
 #VSLIDE
@@ -455,7 +455,7 @@ Here's the announcement
 
 #HSLIDE
 
-# What's next?
+# What’s next?
 
 #VSLIDE
 
