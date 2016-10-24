@@ -406,7 +406,7 @@ end
 
 #HSLIDE
 
-# Evangelize
+# Connect
 
 #VSLIDE
 
@@ -415,10 +415,6 @@ end
 #VSLIDE
 
 ![Evangelize Adapters](assets/images/evangelize-adapters.png)
-
-#HSLIDE
-
-# Connect
 
 #VSLIDE?gist=a44681b325f3cc92c02cad3ed12e157e
 
