@@ -143,7 +143,7 @@ To kick off PagerDuty API v2, I gathered input from a number of sources:
 
 ## Go to the Source
 
-<figcaption>https://github.com/dropbox/pygerduty</ficaption>
+<figcaption>https://github.com/dropbox/pygerduty</figcaption>
 
 <!--
 Go to the source — literally. We're fortunate enough to have a large community of developers who write and publish code for talking to the PagerDuty APIs in a variety of languages. Looking at this code can give you a fresh perspective on how developers are interpreting your API's documentation and patterns, helping you look for where developers need to jump through hoops and you could perhaps provide a better experience.
