@@ -27,10 +27,9 @@ Having a public API has always been important to PagerDuty. Since we don't provi
 #VSLIDE
 
 ```ruby
-class ApiController < ApplicationController
-  # This controller are for communication between the main app server
-  # and other processes in the system.  The idea here is that this
-  # shouldn't be exposed to the outside world.
+# This controller is for communication between the main app
+# server and other processes in the system. The idea here is
+# that this shouldn't be exposed to the outside world.
 ```
 
 ![API refactor](assets/images/api-v1-refactor.png)
@@ -90,6 +89,8 @@ This talk by Amber Feng at Stripe, entitled "Move Fast, Don’t Break the API", 
 
 ## Developer Blogs
 
+FIXME: green on white no good
+
 <figcaption>https://blogs.dropbox.com/developers/2015/04/a-preview-of-the-new-dropbox-api-v2/</figcaption>
 
 <!--
@@ -104,6 +105,9 @@ This post by Leah Culver at Dropbox was a great example of how to be concise and
 #VSLIDE?image=assets/images/bike-shed.jpg
 
 ## Make decisions.
+
+FIXME: more protocol examples
+link to resources on those things
 
 <!--
 Design requires decision-making. Especially when it comes to things that on the surface appear purely aesthetic (like an API), everyone will have input.
@@ -176,6 +180,7 @@ But there's a secondary motivation. Designing APIs is tough. Designing an API to
 - vendor MIME type <!-- .element: class="fragment" -->
 - canonical API subdomain <!-- .element: class="fragment" -->
 - reference types <!-- .element: class="fragment" -->
+- deprecate basic auth <!-- .element: class="fragment" -->
 - standard data types <!-- .element: class="fragment" -->
 - performance tweaks: counts <!-- .element: class="fragment" -->
 - consistency <!-- .element: class="fragment" -->
@@ -243,6 +248,8 @@ Here's one thing we experimented with: using knowledge of our Rails codebase to 
 
 ## Choose domain-specific technologies
 
+FIXME: image cut off
+
 ![API Spec Formats](assets/images/api-specs.png)
 
 #VSLIDE?gist=44dca2fec85c13810f1c102bacedfa1e
@@ -291,6 +298,24 @@ class Api::V2::EscalationPolicyAdapter::Base < ApiDuty::Adapter
 end
 ```
 
+#VSLIDE?gist=dc74ca6f7faaf49c7e748c483eaf7178
+
+## Keep it Simple
+
+<!--
+Schedules controller inheritance
+-->
+
+#VSLIDE
+
+## Be pragmatic?image=assets/images/farfalle.jpg
+
+### DRY is not a god
+
+<!--
+DRY is not a god
+-->
+
 #HSLIDE
 
 # Test
@@ -327,6 +352,20 @@ At the very beginning, then, we switched our internal clients to use the new API
 
 # Connect
 
+#VSLIDE?gist=a44681b325f3cc92c02cad3ed12e157e
+
+<!--
+Basic auth deprecation letter
+-->
+
+#VSLIDE?gist=7fec9b36bf0bd609204f6614fb5717f3
+
+<figcaption>https://www.pagerduty.com/blog/pagerduty-api-v2-now-in-beta/</figcaption>
+
+<!--
+Here's the announcement
+-->
+
 #VSLIDE
 
 ![Customer Support](assets/images/customer-support.png)
@@ -352,6 +391,16 @@ At the very beginning, then, we switched our internal clients to use the new API
 
 ![API v2 Use Metrics](assets/images/v2-use-metrics.png)
 
+#HSLIDE
+
+# What's next?
+
+#VSLIDE
+
+## Deprecation
+
+![Deprecation plan](assets/images/sunsetting-plan.png)
+
 #HSLIDE?image=assets/images/never-ending-story.jpg
 
 # Fin?
@@ -370,6 +419,7 @@ At the very beginning, then, we switched our internal clients to use the new API
 
 - "Stand on the Shoulders of Giants" By Samir Eberlin [CC0], via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Turtles.on.a.stone.in.brazil.jpg
 - "Make Decisions." By SeppVei (Own work) [CC0], via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Bicycle_shed.JPG
+- "Be Pragmatic" By Liveon001 © Travis K. Witt (Own work) [CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0) or GFDL (http://www.gnu.org/copyleft/fdl.html)], via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Farfalle_Pasta.JPG
 - "Dogfood. Everything." Original source not found. Used without permission.
 - "Keep it maintainable" By David Jones from Isle of Wight, United Kingdom [[CC BY 2.0](http://creativecommons.org/licenses/by/2.0)], via Wikimedia Commons — https://commons.wikimedia.org/wiki/File:Mike_O%27Callaghan-Pat_Tillman_Bridge_construction.jpg
 - "Pour over logs" by Timothy Marsee [[CC BY 2.0](http://creativecommons.org/licenses/by/2.0)], via Flickr — https://www.flickr.com/photos/tmarsee530/9899684046
