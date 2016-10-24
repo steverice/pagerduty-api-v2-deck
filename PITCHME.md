@@ -17,6 +17,7 @@
 - incident resolution platform <!-- .element: class="fragment" -->
 - triage events <!-- .element: class="fragment" -->
 - manage incident response <!-- .element: class="fragment" -->
+- ~250 employees <!-- .element: class="fragment" -->
 - Rails, MySQL, Scala, Cassandra, Kafka, etc. <!-- .element: class="fragment" -->
 - Backbone, Ember.js, Android + iOS <!-- .element: class="fragment" -->
 
