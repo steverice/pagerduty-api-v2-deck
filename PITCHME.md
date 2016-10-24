@@ -467,7 +467,7 @@ Here's the announcement
 
 ## BFF
 
-#VSLIDE?image=assets/images/webhooks-integrations.png
+#VSLIDE?image=assets/images/integrations.jpg
 
 ## Moar Integrations
 
