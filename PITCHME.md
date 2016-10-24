@@ -467,11 +467,9 @@ Here's the announcement
 
 ## BFF
 
-#VSLIDE
+#VSLIDE?image=assets/images/webhooks-integrations.png
 
 ## Moar Integrations
-
-![Webhooks/Integrations](assets/images/webhooks-integrations.png)
 
 #HSLIDE?image=assets/images/never-ending-story.jpg
 
