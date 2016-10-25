@@ -15,9 +15,11 @@
 
 ## What is PagerDuty?
 
-- incident resolution platform <!-- .element: class="fragment" -->
-- triage events <!-- .element: class="fragment" -->
-- manage incident response <!-- .element: class="fragment" -->
+- incident resolution platform <!-- .element: class="fragment" data-fragment-index="1" -->
+- triage events <!-- .element: class="fragment" data-fragment-index="2" -->
+- notify responders <!-- .element: class="fragment" data-fragment-index="2" -->
+- manage incident response <!-- .element: class="fragment" data-fragment-index="2" -->
+- SaaS product <!-- .element: class="fragment" -->
 - ~250 employees, started with half that <!-- .element: class="fragment" -->
 - Rails, MySQL, Scala, Cassandra, Kafka, etc. <!-- .element: class="fragment" -->
 - Backbone, Ember.js, Android + iOS <!-- .element: class="fragment" -->
