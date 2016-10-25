@@ -235,7 +235,7 @@ Accept: application/vnd.pagerduty+json;version=2
 
 #VSLIDE
 
-### performance tweaks
+### performance tweak
 
 ```json
 {
@@ -523,9 +523,13 @@ Here’s the announcement
 
 ## BFF
 
-#VSLIDE?image=assets/images/integrations.jpg
+#VSLIDE
 
-## Moar Integrations
+## The Platform Strategy
+
+![PagerDuty Platform Extensibility](assets/images/platform-extensibility.png) <!-- .element: style="margin-bottom:50px;" -->
+
+<figcaption>https://www.pagerduty.com/features/platform-extensibility/</figcaption>
 
 #VSLIDE
 
