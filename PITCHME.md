@@ -9,6 +9,7 @@
 ##### software engineer
 ##### frontend, backend, APIs
 ##### API Captain at <span class="pd-green">PagerDuty</span> in San Francisco
+##### Platform Team
 
 #VSLIDE?image=assets/images/pagerduty_brand_stamp.png
 
@@ -17,7 +18,7 @@
 - incident resolution platform <!-- .element: class="fragment" -->
 - triage events <!-- .element: class="fragment" -->
 - manage incident response <!-- .element: class="fragment" -->
-- ~250 employees <!-- .element: class="fragment" -->
+- ~250 employees, started with half that <!-- .element: class="fragment" -->
 - Rails, MySQL, Scala, Cassandra, Kafka, etc. <!-- .element: class="fragment" -->
 - Backbone, Ember.js, Android + iOS <!-- .element: class="fragment" -->
 
