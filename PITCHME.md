@@ -198,19 +198,64 @@ But there’s a secondary motivation. Designing APIs is tough. Designing an API 
 
 #VSLIDE
 
-## Highlights
+### header- and key-based versioning
 
-- header- and key-based versioning <!-- .element: class="fragment" -->
-- canonical API subdomain <!-- .element: class="fragment" -->
-- use standards <!-- .element: class="fragment" -->
-- deprecate basic auth <!-- .element: class="fragment" -->
-- performance tweaks <!-- .element: class="fragment" -->
-- consistency <!-- .element: class="fragment" -->
+```
+Accept: application/vnd.pagerduty+json;version=2
+```
 
-<!--
-register media type under vendor tree with IANA
-schema consistency, path consistency, parameter consistency, response consistency
--->
+![API Key Creation](assets/images/api-key-creation.png)
+
+<figcaption>http://www.iana.org/assignments/media-types/application/vnd.pagerduty+json</figcaption>
+
+#VSLIDE
+
+### canonical API subdomain
+
+##### ~~initech.pagerduty.com~~
+##### ~~acmemonitoring.pagerduty.com~~
+##### ~~evilcorp.pagerduty.com~~
+### api.pagerduty.com
+
+#VSLIDE
+
+### use standards
+
+- respect HTTP semantics
+- ISO 8601
+- IANA tzinfo
+- fully-qualified URLs
+
+#VSLIDE
+
+### deprecate basic auth
+
+![Basic Auth Use](assets/images/basic-auth-use.png)
+
+#VSLIDE
+
+### performance tweaks
+
+```json
+{
+  "incidents": [{
+    "id": "P1R8NC6",
+    "type": "incident",
+    "summary": "[#7893] There are 2 Charizard nearby!",
+    "self": "https://api.pagerduty.com/incidents/P1R8NC6",
+  }],
+  "limit": 1,
+  "offset": 0,
+  "total": null, //don't care about this
+  "more": true //more resources available
+}
+```
+
+#VSLIDE
+
+### consistency
+
+![Resource References](assets/images/resource-references.png)
 
 #VSLIDE
 
