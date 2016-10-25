@@ -505,6 +505,15 @@ Here’s the announcement
 ![v1 docs banner](assets/images/v1-docs-banner.png)
 <figcaption>https://v1.developer.pagerduty.com/</figcaption>
 
+#VSLIDE?video=https://www.youtube.com/embed/JffzFiFHwgo?start=1875&autoplay=1
+
+## Demonstrate
+
+### webinars
+### sales demos
+### live demos
+### customer success
+
 #VSLIDE
 
 ![API v2 Use Metrics](assets/images/v2-use-metrics.png)
