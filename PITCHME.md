@@ -507,7 +507,7 @@ Here’s the announcement
 ![v1 docs banner](assets/images/v1-docs-banner.png)
 <figcaption>https://v1.developer.pagerduty.com/</figcaption>
 
-#VSLIDE?video=https://www.youtube.com/embed/JffzFiFHwgo?start=1875&autoplay=1
+#VSLIDE?video=assets/videos/webinar.mov
 
 ## Demonstrate
 
