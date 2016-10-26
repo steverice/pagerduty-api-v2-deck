@@ -1,7 +1,5 @@
-# PagerDuty GitPitch Deck
+# API Creation to Iteration: Without the Frustration
 
-A PagerDuty-branded deck for use with [GitPitch](https://gitpitch.com). Clone/Fork and go!
+[![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/steverice/pagerduty-api-v2-deck/master?grs=github&t=white)
 
-#### [View it on GitPitch](https://gitpitch.com/PagerDuty/gitpitch-deck/master)
-
-![Preview](readme-hero.jpg)
+<iframe width='770' height='515' src='https://gitpitch.com/steverice/pagerduty-api-v2-deck/master?grs=github&t=white' frameborder='0' allowfullscreen></iframe>
