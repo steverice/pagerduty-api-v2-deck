@@ -1,7 +1,7 @@
 # API Creation to Iteration: Without the Frustration
 
-[![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/steverice/pagerduty-api-v2-deck/master?grs=github&t=white)
+[![GitPitch](https://gitpitch.com/assets/badge.svg)](https://gitpitch.com/steverice/pagerduty-api-v2-deck)
 
 A presentation on the process behind developing [PagerDuty's API v2](https://developer.pagerduty.com). Made with [GitPitch](https://gitpitch.com).
 
-![Cover Slide](assets/images/cover.png)
+[![Cover Slide](assets/images/cover.png)](https://gitpitch.com/steverice/pagerduty-api-v2-deck)
