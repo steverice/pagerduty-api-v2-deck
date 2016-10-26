@@ -138,18 +138,6 @@ In some technical areas, it can be quite valuable to have a decision maker whose
 Even better, outsource your decisions if possible.
 -->
 
-#VSLIDE
-
-![API v2 Concerns Hackpad](assets/images/api-v2-concerns.png)
-
-<!--
-To kick off PagerDuty API v2, I gathered input from a number of sources:
-- the commonalities in our existing API documentation
-- what made for clean code and what didn’t (experience + analysis)
-- discussions with colleagues and interested parties
-- feature requests and customer support: what was causing people pain?
--->
-
 #VSLIDE?image=assets/images/pygerduty.png
 
 ## Go to the Source
@@ -227,7 +215,6 @@ Accept: application/vnd.pagerduty+json;version=2
 - respect HTTP semantics
 - ISO 8601
 - IANA tzinfo
-- fully-qualified URLs
 
 #VSLIDE
 
@@ -301,11 +288,6 @@ Here’s one thing we experimented with: using knowledge of our Rails codebase t
 
 # Document
 
-#VSLIDE
-
-![Stripe API Documentation](assets/images/stripe-api-docs.png)
-<figcaption>https://stripe.com/docs/api</figcaption>
-
 #VSLIDE?image=assets/images/maintainable.jpg
 
 ## Keep it maintainable
@@ -323,6 +305,11 @@ Here’s one thing we experimented with: using knowledge of our Rails codebase t
 #VSLIDE?image=assets/images/remember-the-humans.jpg
 
 ## Consider the Humans
+
+#VSLIDE
+
+![Stripe API Documentation](assets/images/stripe-api-docs.png)
+<figcaption>https://stripe.com/docs/api</figcaption>
 
 #VSLIDE?image=assets/images/swagger-docs.png
 
@@ -487,12 +474,8 @@ Basic auth deprecation letter
 <figcaption>https://www.pagerduty.com/blog/pagerduty-api-v2-now-in-beta/</figcaption>
 
 <!--
-Here’s the announcement
+Have a beta program
 -->
-
-#VSLIDE
-
-![Customer Support](assets/images/customer-support.png)
 
 #HSLIDE
 
