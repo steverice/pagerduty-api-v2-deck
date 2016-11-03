@@ -1,8 +1,16 @@
 @font-face {
   font-family: 'Colfax';
+  src: url('https://www.pagerduty.com/wp-content/themes/startit-child/fonts/ColfaxWebBold.eot');
+  src: url('https://www.pagerduty.com/wp-content/themes/startit-child/fonts/ColfaxWebBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Colfax';
   src: url('https://www.pagerduty.com/wp-content/themes/startit-child/fonts/ColfaxWebMedium.eot');
   src: url('https://www.pagerduty.com/wp-content/themes/startit-child/fonts/ColfaxWebMedium.woff') format('woff');
-  font-weight: bold;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -10,7 +18,7 @@
   font-family: 'Colfax';
   src: url('https://www.pagerduty.com/wp-content/themes/startit-child/fonts/ColfaxWebMediumItalic.eot');
   src: url('https://www.pagerduty.com/wp-content/themes/startit-child/fonts/ColfaxWebMediumItalic.woff') format('woff');
-  font-weight: bold;
+  font-weight: 600;
   font-style: italic;
 }
 
