@@ -46,6 +46,13 @@
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Inconsolata';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Inconsolata'), url(https://fonts.gstatic.com/s/inconsolata/v14/BjAYBlHtW3CJxDcjzrnZCLrIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+
 .reveal,
 .reveal h1,
 .reveal h2,
@@ -79,6 +86,10 @@
 
 ::-moz-selection {
   background: #47BA04;
+}
+
+.reveal code, .reveal pre {
+  font-family: 'Inconsolata', 'Liberation Mono', 'Menlo', Courier, monospace;
 }
 
 /*********************************************
